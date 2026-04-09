@@ -37,7 +37,10 @@ function getSavedTheme(): Theme {
   return THEMES.find((t) => t.name === saved) ?? THEMES[0]
 }
 
-const ThemeContext = createContext<{ theme: Theme; setTheme: (t: Theme) => void }>({
+const ThemeContext = createContext<{
+  theme: Theme
+  setTheme: (t: Theme) => void
+}>({
   theme: THEMES[0],
   setTheme: () => {},
 })

@@ -24,7 +24,17 @@ function calcReadTime(text: string): number {
 /** Parse YAML frontmatter and body from a raw markdown string. */
 function parseFrontmatter(raw: string, slug: string): BlogPost {
   const match = raw.match(/^---\n([\s\S]*?)\n---\n*([\s\S]*)$/)
-  if (!match) return { slug, title: slug, category: '', summary: '', intro: '', image: '', readTime: 1, content: raw }
+  if (!match)
+    return {
+      slug,
+      title: slug,
+      category: '',
+      summary: '',
+      intro: '',
+      image: '',
+      readTime: 1,
+      content: raw,
+    }
 
   const fm: Record<string, string> = {}
   for (const line of match[1].split('\n')) {

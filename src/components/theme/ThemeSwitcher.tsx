@@ -36,7 +36,9 @@ export default function ThemeSwitcher() {
                 {/* Colour swatch */}
                 <span
                   className="w-3 h-3 rounded-full shrink-0 border border-white/10"
-                  style={{ background: `linear-gradient(135deg, ${t.primary}, ${t.secondary})` }}
+                  style={{
+                    background: `linear-gradient(135deg, ${t.primary}, ${t.secondary})`,
+                  }}
                 />
                 {t.name}
               </button>

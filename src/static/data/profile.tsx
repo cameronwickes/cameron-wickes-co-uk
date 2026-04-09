@@ -28,10 +28,14 @@ export const ABOUT = {
       { text: 'secure', color: 'text-terminal-amber' },
       { text: ', and ' },
       { text: 'easy to maintain', color: 'text-terminal-amber' },
-      { text: ". I believe in owning what you ship and knowing why you're doing it." },
+      {
+        text: ". I believe in owning what you ship and knowing why you're doing it.",
+      },
     ],
     [
-      { text: "At AWS, I'm focused on launching software in new regions, engineering" },
+      {
+        text: "At AWS, I'm focused on launching software in new regions, engineering",
+      },
       { text: ' CI/CD pipelines', color: 'text-terminal-green' },
       { text: ', modelling' },
       { text: ' infrastructure-as-code', color: 'text-terminal-green' },
@@ -49,8 +53,16 @@ export interface SocialLink {
 }
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/cameronwickes', icon: <LinkedInIcon /> },
-  { label: 'GitHub', href: 'https://github.com/cameronwickes', icon: <GitHubIcon /> },
+  {
+    label: 'LinkedIn',
+    href: 'https://linkedin.com/in/cameronwickes',
+    icon: <LinkedInIcon />,
+  },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/cameronwickes',
+    icon: <GitHubIcon />,
+  },
 ]
 
 export const CONTACT = {
